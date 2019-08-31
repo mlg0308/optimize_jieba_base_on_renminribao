@@ -1,0 +1,12 @@
+import jieba
+jieba.load_userdict('__yourpath__\dic_from_renminribao')
+
+stopwords = []
+f = open("__yourpath__\stopwords.txt", 'r' , encoding = 'utf-8')
+for line in f:
+    stopwords.append(line.strip('\n'))
+f.close()
+print(len(stopwords))
+stopwords = list(set(stopwords))
+print(len(stopwords))
+
