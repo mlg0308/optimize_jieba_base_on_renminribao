@@ -9,4 +9,3 @@ f.close()
 print(len(stopwords))
 stopwords = list(set(stopwords))
 print(len(stopwords))
-
